@@ -5,7 +5,7 @@ The element value in the i-th row and j-th column of the array should be i*j.
 
 
 def gen2DArray(rows, cols):
-    return [[i * j for i in range(rows)] for j in range(cols)]
+    return [[i * j for j in range(cols)] for i in range(rows)]
 
 
 (x, y) = tuple(map(int, input().split()))
